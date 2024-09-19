@@ -4,33 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BIBLIOTEC</title>
+    <title>login-bibliotec</title>
     <link rel="stylesheet" href="./css/login.css">
+
+    <style>
+        body {
+            background-size: 100%;
+            background-image: url(./images/login-bk-desktop.png);
+        }
+    </style>
 </head>
 
 <body>
     <header>
-
         <div class="layout-grid header-flex">
-            <img src="images/logo-desktop.svg" alt="Livro aberto com o texto Bibliotec ao seu lado">
-
+            <img src="./images/logo-desktop.svg" alt="">
             <nav>
-                <a href="">Quem Somos</a>
-                <a href="">Acervo</a>
-                <a href="">Login</a>
+                <a href="#">Quem somos</a>
+                <a href="#">Nosso acervo</a>
+                <a href="#">Login</a>
             </nav>
         </div>
     </header>
 
+
     <main>
-        <div class="fundo" >
-            <img src="./images/login-bk-desktop.png" alt="sla">
+
+        <div class="layout-grid">
+
+            <form action="">
+                <h1>Entre na BiblioTec</h1>
+                <div class="preencher-dados">
+                    <label for="e-mail">E-mail</label>
+                    <input type="email" placeholder="xxxxxxx">
+                </div>
+                <div class="preencher-dados">
+                    <label for="senha">Senha</label>
+                    <input type="password" placeholder="xxxxxx">
+                    <a href="#">esqueci a senha</a>
+                </div>
+                <button class="enviar">Entrar</button>
+            </form>
         </div>
 
-        <article>
-            
-        </article>
+
+
+
     </main>
 
-    
 </body>
+
+</html>

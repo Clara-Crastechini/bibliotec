@@ -72,6 +72,9 @@ h1 {
 .titulo{
     width: 100%;
 }
+header img{
+    margin-top: 10px;
+}
 
 .hrmenor{
     border:  3px solid aqua;
@@ -95,7 +98,9 @@ section{
     flex-wrap: wrap;
     justify-content: space-between ;
 }
-
+/* section.titulo {
+    
+} */
 main{
     width: 100%;
     height: auto;
@@ -369,3 +374,70 @@ footer hr {
     margin-left: 15px;
 }
 
+
+/* SMARTPHONE */
+@media screen  and (max-width: 992px) {
+    
+        .bibliotec-flex  {
+            display: flex;
+            flex-wrap: wrap;
+            /* flex-direction: column; */
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        
+        }
+    
+        .bibliotec-flex article {
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            
+        }
+    
+        .bibliotec-flex h1 {
+            align-items: center;
+        }
+    
+        .totalmente-flex img {
+            width: 10px;
+            height: 10px;
+        
+    }
+
+    .titulo {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    
+     .favoritos { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+
+    /* navbar */
+
+    .menu{
+        position: fixed;
+        top: 0;
+        left: -60%;
+        z-index: 10;
+
+        width: 60%;
+        height: 100%;
+        background-color:rgb(57, 57, 57);
+            
+    }
+
+    .mostrarMenu {
+        left: 0;
+    }
+
+}

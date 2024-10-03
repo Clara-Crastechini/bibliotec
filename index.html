@@ -10,15 +10,21 @@
 
 <body>
     <header>
-
         <div class="layout-grid header-flex">
-            <img src="./images/book-solid.svg" alt="Livro aberto com o texto Bibliotec ao seu lado">
-
-            <nav>
+            <img src="./images/logo-desktop.svg" alt="Livro aberto com o texto Bibliotec ao seu lado">
+            
+            <nav id="menu" class="menu" style="display: block;">
                 <a href="">Quem Somos</a>
                 <a href="">Acervo</a>
                 <a href="">Login</a>
             </nav>
+            <!-- <nav class="sumir-menu">
+                <a href="">Quem Somos</a>
+                <a href="">Acervo</a>
+                <a href="">Login</a>
+            </nav> -->
+
+            <img src="./images/menu-hamburger.png" alt="" onclick="montrarMenu()">
         </div>
     </header>
 
@@ -91,7 +97,7 @@
 
 
 
-        <section class="titulo">
+        <section class="layout-grid titulo">
             <div>
                 <h1> Top 4 livros recomendados </h1>
             </div>
@@ -173,6 +179,12 @@
             <a class="link" href="#">@Biblio Tec</a>
         </section>
     </footer>
+
+    <script>
+        function montrarMenu(){
+            document.getElementById(menu) .classList.toggle("montrarMenu")
+        }
+    </script>
 
 
 </body>
